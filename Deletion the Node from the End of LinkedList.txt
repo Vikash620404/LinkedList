@@ -1,0 +1,14 @@
+Deletion the Node from the End of LinkedList!
+public Node deleteAtBeg(Node head){
+if(head==null){
+return head;
+}
+Node prevNode;
+Node temp=head;
+while(temp.next!=null){
+prevNode=temp;
+temp=temp.next;
+}
+prevNode.next=null;
+return head;
+}
