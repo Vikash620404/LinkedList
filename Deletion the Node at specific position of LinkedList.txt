@@ -1,0 +1,19 @@
+Deletion the Node at specific position of LinkedList!
+public Node deleteAtBeg(Node head,int pos){
+if(head==null||pos==0){
+return head;
+}
+Node temp=head;
+int count=0;
+Node nextNode;
+
+while(count<pos-1){
+
+temp=temp.next;
+count++;
+}
+nextNode=temp.next;
+temp.next=nextNode.next;
+
+return head;
+}
