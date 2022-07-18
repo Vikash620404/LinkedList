@@ -7,6 +7,7 @@ count++;
 }
 newNode .prev=temp;
 newNode.next=temp.next;
+temp.next=newNode;
 newNode.next.prev=newNode;
 return head;
 }
